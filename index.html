@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <title>Login</title>
+</head>
+<body>
+
+<header>
+  <h1>Banco Popular</h1>
+  <h2>Sistema de Gestión Hipotecario</h2>
+</header>
+
+<section>
+  <div class="container">
+
+    <h3>Ingreso</h3>
+
+    <input type="email" id="correo" placeholder="Correo">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="loginUser()">Iniciar Sesión</button>
+
+    <p id="error" class="error"></p>
+
+    <p style="text-align:center;margin-top:15px;">
+      ¿No tienes cuenta?
+      <a href="register.html">Registrarse</a>
+    </p>
+
+  </div>
+</section>
+
+</body>
+</html>

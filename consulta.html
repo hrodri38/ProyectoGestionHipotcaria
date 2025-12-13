@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <title>Consulta de Créditos</title>
+</head>
+
+<body>
+
+<header class="header-bar">
+  <div class="header-content">
+    <div></div> <!-- espacio izquierdo -->
+    
+    <div class="header-title">
+      <h1>Banco Popular</h1>
+      <h2>Sistema de Gestión Hipotecario</h2>
+    </div>
+
+    <button class="logout-btn" onclick="cerrarSesion()">Cerrar sesión</button>
+  </div>
+</header>
+
+
+  <section>
+    <div class="container" style="width:600px;">
+
+      <h2>Consulta de Créditos</h2>
+
+      <div class="card">
+        <h3>Resumen de Créditos</h3>
+        <p>Total créditos: <strong id="total"></strong></p>
+        <p>Activos: <strong id="activos"></strong></p>
+        <p>En mora: <strong id="mora"></strong></p>
+        <p>Cancelados: <strong id="cancelados"></strong></p>
+      </div>
+
+      <input id="busqueda" placeholder="Buscar por cliente" onkeyup="buscarCreditos()">
+
+      <div id="resultados"></div>
+
+    </div>
+  </section>
+
+  <script>
+    cargarResumen();
+    buscarCreditos();
+  </script>
+  
+</body>
+
+</html>

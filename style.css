@@ -1,0 +1,127 @@
+/* Reset + estilo base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background: rgb(179, 255, 172);
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #059250;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #2e4229;
+  margin-top: 5px;
+}
+
+/* SECTION CENTRAL */
+section {
+  margin-top: 40px; /* espacio después del header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR */
+.container {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #bcbcbc;
+}
+
+/* TEXTOS */
+h3, h2 {
+  text-align: center;
+}
+
+/* INPUTS + BOTONES */
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background: #059250;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #003f9c;
+}
+
+/* ERRORES */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 12px;
+  box-shadow: 0 0 5px #d4d4d4;
+}
+
+/* HEADER CONTENEDOR */
+.header-bar {
+  width: 100%;
+  background: rgb(194, 255, 159);
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* CONTENIDO INTERNO DEL HEADER */
+.header-content {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+
+/* BOTÓN CERRAR SESIÓN */
+.logout-btn {
+  justify-self: end;
+  padding: 8px 14px;
+  background: #377a30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: auto;          /* 🔴 clave */
+}
+
+.logout-btn:hover {
+  background: #9b1c1c;
+}
